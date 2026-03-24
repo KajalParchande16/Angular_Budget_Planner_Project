@@ -1,0 +1,18 @@
+<div class="navbar">
+    <h1>K 11 Brand</h1>
+</div>
+<div>
+    <div class="toggle-button-row" (click)="toggleSideOut()">
+        <mat-icon>menu</mat-icon>
+    </div>
+</div>
+
+<div class="slid-out-panel" [class.slid-out]="isSlidOut">
+    <div class="slid-out-content">
+        <h3 class="nav">Budget Planner</h3>
+        <p class="edit-col" (click)="onDashboard()">Dashboard</p>
+        <p class="edit-col" (click)="onProfile()">Profile</p>
+        <p class="edit-col" (click)="onHistory()">Pre History</p>
+        <p class="edit-col" (click)="onLogOut()">LogOut</p>
+    </div>
+</div>
